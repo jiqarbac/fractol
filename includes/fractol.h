@@ -6,19 +6,16 @@
 /*   By: jiqarbac <jiqarbac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 16:29:15 by jiqarbac          #+#    #+#             */
-/*   Updated: 2021/03/19 16:44:46 by jiqarbac         ###   ########.fr       */
+/*   Updated: 2021/03/19 16:53:50 by jiqarbac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include <stdio.h>
 # include "mlx.h"
 # include "../libft/libft.h"
-# include <stdlib.h>
 # include <math.h>
-# include <pthread.h>
 
 # define W 700.0
 # define H 700.0
@@ -73,7 +70,6 @@ void			applyzoom(t_mlx *e, double mousr, double mousi,
 				double zmfactor);
 void			choice(t_mlx *mlx);
 void			dt(t_mlx *mlx, int x, int y, int color);
-
 void			menu(t_mlx mlx);
 void			menujulia(t_mlx mlx, int mx, int my);
 void			changefract(t_mlx *mlx);
