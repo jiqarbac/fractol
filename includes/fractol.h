@@ -6,7 +6,7 @@
 /*   By: jiqarbac <jiqarbac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 16:29:15 by jiqarbac          #+#    #+#             */
-/*   Updated: 2021/03/10 11:06:23 by jiqarbac         ###   ########.fr       */
+/*   Updated: 2021/03/19 16:44:46 by jiqarbac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,19 +73,16 @@ void			applyzoom(t_mlx *e, double mousr, double mousi,
 				double zmfactor);
 void			choice(t_mlx *mlx);
 void			dt(t_mlx *mlx, int x, int y, int color);
-void			ft_strdel(char **as);
+
 void			menu(t_mlx mlx);
 void			menujulia(t_mlx mlx, int mx, int my);
 void			changefract(t_mlx *mlx);
 int				key_press(int keycode, void *param);
-int				ft_atoi_base(char *str, char *base);
 int				ft_exit(void *param, int key);
 int				clr(int iter);
 int				mousemove(int mx, int my, void *param);
 int				mousepress(int button, int x, int y, void *param);
 int				main(int ac, char **av);
 double			ft_map(int i);
-size_t			ft_strlen(const char *s);
-char			*ft_itoa(int n);
 
 #endif
